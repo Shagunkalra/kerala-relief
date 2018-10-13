@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Traffic Layer</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+    #mapid { height: 180px; }
+      #maps {
+        height: 50%;
+        width: 50%;
+        text-align: center;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    
+  </head>
+  <body>
+<
+
+
+
+
+//       function initMap() {
+//         var map = new google.maps.Map(document.getElementById('maps'), {
+//           zoom: 13,
+//           center: {lat: 10.8505, lng: 76.2711}
+//         });
+
+//         var trafficLayer = new google.maps.TrafficLayer();
+//         trafficLayer.setMap(map);
+// }
+
+<<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(10.8505,76.2711);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  // Zoom to 9 when clicking on marker
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(9);
+    map.setCenter(marker.getPosition());
+  });
+}
+</script>
+
+
+
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMAin9qwSU4rjLR0As2cqkV-c9lRED7wc&callback=initMap">
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMAin9qwSU4rjLR0As2cqkV-c9lRED7wc&callback=myMap">
+    </script>
+    
+  </body>
+
+</html>

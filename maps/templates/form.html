@@ -1,0 +1,197 @@
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/static/img/kerala/1322(4).png" type="image/png">
+    <title>Login - Kerala Relief</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/vendors/linericon/style.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="/static/vendors/nice-select//static/css/nice-select.css">
+    <link rel="stylesheet" href="/static/vendors/animate-/static/css/animate.css">
+    <link rel="stylesheet" href="/static/vendors/jquery-ui/jquery-ui.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+
+<body>
+
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="">
+                        <img src="/static/img/kerala/1322(4).png" alt="">
+                        <h4>Stand with <span style="color:#4683ea;">Kerala</span></h4>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                     aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <div class="row ml-0 w-100">
+                            <div class="col-lg-12 pr-0">
+                                <ul class="nav navbar-nav center_nav pull-right">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="">Home</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="/events">Events</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contactus">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/login">Login</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/register">Sign Up</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="main_btn" href="/map">Map</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="main_btn" href="/donation">Donate Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================Header Menu Area =================-->
+
+    <div style="margin:100px;"></div>
+    <!--================ Start Recent Event Area =================-->
+    <section class="recent_event section_gap_custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div style="background-color:lightgrey; border-radius:5px; padding:20px 5px 20px 5px; ">
+                        <center><h2>Login</h2></center>
+                        <center>
+                        <form method = 'POST' action='' enctype='multipart/form-data'>{% csrf_token %}
+                        <p>
+                                <label>Username</label>
+                                <input type="text" name="username">
+                        </p>
+                        <p>
+                            <label>Password</label>
+                            <input type="password" name="password">
+                        </p>
+                        <button class="btn btn-lg" type = "submit" style="background-color:#4683ea; color:white; ">submit</button>
+                        </center>
+                    </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-responsive"><img src="/static/img/kerala/timthumb.php.jpeg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Recent Event Area =================-->
+
+    <!--================ Start Footer Area  =================-->
+    <footer class="footer-area section_gap" id="contactus">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12  col-md-12 col-sm-12">
+                    <center>
+                    <div class="single-footer-widget">
+                        <h1 class="footer_title" style="font-size: 30px;">Contact with us</h1>
+                    </div>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="single-footer-widget">
+                        <center ><i style="border-radius:50%; background-color:white; color:aqua;padding:20px;" class="fa fa-map-marker fa-2x"></i><br><br>
+                        <h1 class="footer_title">Address :</h1>
+                        <p>lorem ipsum lorem ipsum</p>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="single-footer-widget">
+                        <center ><i style="border-radius:50%; background-color:white; color:aqua;padding:20px;" class="fa fa-phone fa-2x"></i><br><br>
+                        <h1 class="footer_title">Telephone  :</h1>
+                        <p>+9876543210, +5432109876</p>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="single-footer-widget">
+                        <center ><i style="border-radius:50%; background-color:white; color:aqua;padding:20px;" class="fa fa-envelope fa-2x"></i><br><br>
+                        <h1 class="footer_title">E-mail :</h1>
+                        <p>abcqwerty@xyz.in</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================ End Footer Area  =================-->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/popper.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- <script src="/static/vendors/lightbox/simpleLightbox.min.js"></script> -->
+    <script src="/static/vendors/nice-select//static/js/jquery.nice-select.min.js"></script>
+    <!-- <script src="/static/vendors/isotope/imagesloaded.pkgd.min.js"></script> -->
+    <script src="/static/vendors/isotope/isotope-min.js"></script>
+    <script src="/static/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.ajaxchimp.min.js"></script>
+    <!-- <script src="/static/vendors/counter-up/jquery.waypoints.min.js"></script> -->
+    <!-- <script src="/static/vendors/flipclock/timer.js"></script> -->
+    <!-- <script src="/static/vendors/counter-up/jquery.counterup.js"></script> -->
+    <script src="/static/js/mail-script.js"></script>
+    <script src="/static/js/custom.js"></script>
+</body>
+
+</html>
+{% block content %}
+<div>
+<h1>{{ title }}</h1>
+<hr/>
+<form method = 'POST' action='' enctype='multipart/form-data'>{% csrf_token %}
+
+	<p>
+            <label>Username</label>
+            <input type="text" name="username">
+        </p>
+        <p>
+            <label>Password</label>
+            <input type="password" name="password">
+        </p>
+	<input type='submit' value = '{{ title }}'/>
+
+	
+	</form>
+	</div> 
+
+
+
+
+
+
+{% endblock content %}
